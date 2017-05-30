@@ -28,13 +28,13 @@ class ProofsController extends Controller
                 $store = storage_path('app/' . $dir);
             }
         }
-        $view = view('pdf', ['name' => $name]);
-            $client = Client::getInstance();
+        return view('pdf', ['name' => $name]);
+            /*$client = Client::getInstance();
             $client->getEngine()->setPath('C:\Users\Novateur\Documents\vproof\vendor\bin\phantomjs.exe');
             $client->getEngine()->addOption('--load-images=true');
             $client->getEngine()->addOption('--ignore-ssl-errors=true');
             $client->isLazy();
-            $request = $client->getMessageFactory()->createPdfRequest('http://localhost:8001/home/pdf/' . $name, 'GET');
+            $request = $client->getMessageFactory()->createPdfRequest('https://google.com.ng');
             $request->setOutputFile( $name . '.pdf');
             $request->setFormat($paper);
             $request->setOrientation($orientation);
@@ -47,7 +47,7 @@ class ProofsController extends Controller
             if ($response->getStatus() === 200){
                 return redirect()->back()->with('success', 'your pdf was generated successfully');
             }
-        return redirect()->back()->with('error', 'your pdf couldn\'t be generated at the moment');
+        return redirect()->back()->with('error', 'your pdf couldn\'t be generated at the moment');*/
     }
 
     //

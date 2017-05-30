@@ -193,7 +193,7 @@
             width: 80%;
             margin-left: auto;
             margin-right: auto;
-            margin-top: -70px;
+            margin-top: -50vh;
             height: auto;
             font-family: Passion One, serif;
             font-size: 70px;
@@ -276,7 +276,8 @@ $i = $i + 1?>
     <span class="img-white"></span>
     <div class="last-text">
         <p>We hope you like your designs</p>
-        <p>Please kindly refer back with corrections</p>
+        <p>Please kindly refer back</p>
+        <p>with corrections</p>
         <p>as soon as possible</p>
     </div>
 </div>
